@@ -14,12 +14,13 @@ export default async function ServerGridPage(){
 
     const response = await fetch('https://jsonplaceholder.typicode.com/photos');
     const photos:Photo[] = await response.json();
-    const imagePhotos: Photo[] = photos.map(photo => ({
+    const imagePhotos: Photo[] = photos.slice(0, 50).map((photo) => ({
         ...photo,
-        url: 'https://fastly.picsum.photos/id/866/200/300.jpg'
+        // Usamos el id para variar las imágenes
+        url: `https://picsum.photos/id/${photo.id % 1000}/450/450`,
     }));
 
-    console.log(imagePhotos);
+
     return(
         <div>
             <div className="flex justify-between items-center mb-6">
