@@ -1,0 +1,25 @@
+{
+  "HomePage": {
+    "title": "Photo Gallery",
+    "subtitle": "A beautiful collection of images",
+    "loading": "Loading...",
+    "error": "Error loading images",
+    "imageAlt": "Sample image"
+  },
+  "Navigation": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "LanguageSwitcher": {
+    "switchLanguage": "Switch language",
+    "spanish": "Spanish",
+    "english": "English"
+  },
+  "Common": {
+    "welcome": "Welcome",
+    "loading": "Loading...",
+    "error": "An error has occurred",
+    "retry": "Retry"
+  }
+}
